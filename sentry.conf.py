@@ -27,7 +27,7 @@ SENTRY_WEB_OPTIONS = {
 }
 
 # HTTPS
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Redis backend
 REDIS = urlparse.urlparse(environ.get('REDISCLOUD_URL', 'redis://localhost:6379'))
