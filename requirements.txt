@@ -1,0 +1,6 @@
+sentry==6.4.4
+psycopg2==2.5
+dj-database-url==0.3.0
+djrill==1.2.0
+
+uwsgi
