@@ -26,6 +26,9 @@ SENTRY_WEB_OPTIONS = {
     'limit_request_line': 0,  # required for raven-js
 }
 
+# HTTPS
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 # Redis backend
 REDIS = urlparse.urlparse(environ.get('REDISCLOUD_URL', 'redis://localhost:6379'))
 SENTRY_REDIS_OPTIONS = {
