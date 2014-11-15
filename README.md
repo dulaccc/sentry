@@ -7,8 +7,16 @@
 
 ### Create the Heroku app
 
+Create the app in the region you want
+
 ```sh
 $ heroku create --region <region> y-sentry
+```
+
+Then set the proper buildpack
+
+```sh
+$ heroku config:set BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
 ```
 
 ### Push the code
