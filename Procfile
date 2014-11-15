@@ -1,1 +1,1 @@
-web: python uwsgi.py.ini | bin/start-nginx uwsgi --
+web: bin/start-nginx python uwsgi.py.ini | uwsgi --
