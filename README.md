@@ -10,8 +10,8 @@
 Then just create the superuser
 
 ```sh
-$ heroku run sentry createsuperuser
-$ heroku run sentry repair --owner=<username>
+$ heroku run sentry createsuperuser --app <your-app-name>
+$ heroku run sentry repair --owner=<username> --app <your-app-name>
 ```
 
 
