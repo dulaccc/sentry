@@ -1,0 +1,29 @@
+
+{
+  "name": "Sentry",
+  "description": "Exception logger server",
+  "keywords": [
+    "sentry",
+    "exception"
+  ],
+  "repository": "https://github.com/dulaccc/sentry",
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "pgbackups:auto-week",
+    "mandrill:starter",
+    "newrelic:wayne",
+    "rediscloud:25"
+  ],
+  "env": {
+    "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git",
+    "SENTRY_URL_PREFIX": "https://y-sentry.herokuapp.com",
+    "SECRET_KEY": {
+      "description": "This gets generated",
+      "generator": "secret"
+    },
+    "SENTRY_CONF": "sentry.conf.py"
+  },
+  "scripts": {
+    "postdeploy": "sentry upgrade"
+  }
+}

@@ -3,7 +3,19 @@
 > Shit happens — Be on top of it.
 
 
-## Deploy
+## Automatic Deploy
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/dulaccc/sentry/tree/develop)
+
+Then just create the superuser
+
+```sh
+$ heroku run sentry createsuperuser
+$ heroku run sentry repair --owner=<username>
+```
+
+
+## Manual Deploy
 
 ### Create the Heroku app
 
