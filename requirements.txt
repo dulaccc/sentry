@@ -9,3 +9,6 @@ djrill==1.2.0
 
 # Server
 waitress>=0.8,<0.9
+
+# Monitoring
+newrelic>=2.32,<2.33
