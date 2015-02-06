@@ -8,7 +8,7 @@ from sentry.conf.server import *
 
 
 DATABASES = {
-    'default': dj_database_url.config(default='postgres://localhost/y-sentry')
+    'default': dj_database_url.config(default='postgres://localhost/sentry')
 }
 
 # No trailing slash!

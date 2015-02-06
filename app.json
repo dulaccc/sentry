@@ -1,4 +1,3 @@
-
 {
   "name": "Sentry",
   "description": "Exception logger server",
@@ -15,7 +14,6 @@
     "rediscloud:25"
   ],
   "env": {
-    "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git",
     "SENTRY_URL_PREFIX": "https://y-sentry.herokuapp.com",
     "SECRET_KEY": {
       "description": "This gets generated",

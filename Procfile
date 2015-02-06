@@ -1,1 +1,1 @@
-web: bin/start-nginx uwsgi uwsgi.ini
+web: newrelic-admin run-program waitress-serve --port=$PORT sentry:wsgi.application

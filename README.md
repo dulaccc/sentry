@@ -41,7 +41,7 @@ $ git push heroku master
 
 ```sh
 $ heroku config:set SENTRY_URL_PREFIX="https://y-sentry.herokuapp.com"
-$ heroku config:set SENTRY_KEY="a-great-unique-secret-string"
+$ heroku config:set SENTRY_KEY=`openssl rand -base64 32`
 $ heroku config:set SENTRY_CONF="sentry.conf.py"
 ```
 

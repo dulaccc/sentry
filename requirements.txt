@@ -1,6 +1,11 @@
 sentry==6.4.4
+
+# Database
 psycopg2==2.5
 dj-database-url==0.3.0
+
+# Emailing
 djrill==1.2.0
 
-uwsgi
+# Server
+waitress>=0.8,<0.9
