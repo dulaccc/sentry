@@ -39,8 +39,10 @@ $ git push heroku master
 
 ### Set the required settings
 
+> NB: using a protocol-less url like `//my-sentry.herokuapp.com` allows you to access the interface with both `http` and `https`.
+
 ```sh
-$ heroku config:set SENTRY_URL_PREFIX="https://y-sentry.herokuapp.com"
+$ heroku config:set SENTRY_URL_PREFIX="//my-sentry.herokuapp.com"
 $ heroku config:set SENTRY_KEY=`openssl rand -base64 32`
 $ heroku config:set SENTRY_CONF="sentry.conf.py"
 ```

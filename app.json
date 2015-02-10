@@ -14,7 +14,7 @@
     "rediscloud:25"
   ],
   "env": {
-    "SENTRY_URL_PREFIX": "https://y-sentry.herokuapp.com",
+    "SENTRY_URL_PREFIX": "//my-sentry.herokuapp.com",
     "SECRET_KEY": {
       "description": "This gets generated",
       "generator": "secret"
