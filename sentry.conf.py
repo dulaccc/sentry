@@ -45,3 +45,4 @@ SENTRY_REDIS_OPTIONS = {
 MANDRILL_API_KEY = environ.get('MANDRILL_APIKEY', '')
 EMAIL_BACKEND = 'djrill.mail.backends.djrill.DjrillBackend'
 EMAIL_SUBJECT_PREFIX = '[Sentry] '
+DEFAULT_FROM_EMAIL = 'noreply@accountant-x.herokuapp.com'
