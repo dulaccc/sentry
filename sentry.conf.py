@@ -40,7 +40,7 @@ SENTRY_ADMIN_EMAIL = ''
 # Generic Redis configuration used as defaults for various things including:
 # Buffers, Quotas, TSDB
 
-REDIS_URL = environ.get('REDISCLOUD_URL', 'redis://localhost:6379')
+REDIS_URL = environ.get('REDISTOGO_URL', 'redis://localhost:6379')
 REDIS = urlparse.urlparse(REDIS_URL)
 SENTRY_REDIS_OPTIONS = {
     'hosts': {

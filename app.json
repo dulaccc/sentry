@@ -11,7 +11,7 @@
     "pgbackups:auto-week",
     "mandrill:starter",
     "newrelic:wayne",
-    "rediscloud:25"
+    "redistogo:nano"
   ],
   "env": {
     "SENTRY_URL_PREFIX": "//my-sentry.herokuapp.com",
