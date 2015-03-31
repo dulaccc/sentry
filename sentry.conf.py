@@ -145,8 +145,8 @@ SENTRY_URL_PREFIX = environ.get('SENTRY_URL_PREFIX', '')  # No trailing slash!
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 USE_X_FORWARDED_HOST = True
 
-SENTRY_WEB_HOST = 'localhost'
-SENTRY_WEB_PORT = 9000
+SENTRY_WEB_HOST = '0.0.0.0'
+SENTRY_WEB_PORT = int(environ.get('PORT', 9000))
 SENTRY_WEB_OPTIONS = {
     'workers': 3,
     'limit_request_line': 0,  # required for raven-js
