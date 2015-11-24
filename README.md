@@ -68,3 +68,11 @@ $ heroku run sentry upgrade
 $ heroku run sentry createsuperuser
 $ heroku run sentry repair --owner=<username>
 ```
+
+### Maintain a clean database
+
+Every now and then you will need to clean the engine
+
+```sh
+$ sentry --config=sentry.conf.py cleanup --days 60
+```
