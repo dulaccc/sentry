@@ -1,4 +1,4 @@
-sentry==7.4.3
+sentry==7.7.4
 
 # Database
 psycopg2==2.5
